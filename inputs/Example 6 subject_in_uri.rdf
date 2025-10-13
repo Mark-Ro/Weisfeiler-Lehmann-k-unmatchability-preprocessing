@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+         xmlns:owl="http://www.w3.org/2002/07/owl#" 
+         xmlns:ex="http://example.org/">
+
+  <!-- Definizione della proprietà R -->
+  <rdf:Description rdf:about="http://example.org/R">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+
+  <!-- Soggetto s1 -->
+  <owl:NamedIndividual rdf:about="http://example.org/subject/s1">
+    <ex:R rdf:resource="http://example.org/c4"/>
+  </owl:NamedIndividual>
+
+  <!-- Costante c4 -->
+  <owl:NamedIndividual rdf:about="http://example.org/c4">
+    <ex:R rdf:resource="http://example.org/c3"/>
+  </owl:NamedIndividual>
+
+  <!-- Costante c3 -->
+  <owl:NamedIndividual rdf:about="http://example.org/c3">
+    <ex:R rdf:resource="http://example.org/subject/s1"/>
+    <ex:R rdf:resource="http://example.org/subject/s2"/>
+  </owl:NamedIndividual>
+
+  <!-- Soggetto s2 -->
+  <owl:NamedIndividual rdf:about="http://example.org/subject/s2">
+    <ex:R rdf:resource="http://example.org/c5"/>
+  </owl:NamedIndividual>
+
+  <!-- Costante c5 -->
+  <owl:NamedIndividual rdf:about="http://example.org/c5">
+    <ex:R rdf:resource="http://example.org/c3"/>
+  </owl:NamedIndividual>
+
+</rdf:RDF>
