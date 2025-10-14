@@ -1,4 +1,4 @@
-# Weisfeiler–Lehmann Test for k‑unmatchability
+# Weisfeiler-Lehmann Test for k‑unmatchability
 
 This repository implements a pipeline for RDF graph anonymization using **Weisfeiler–Lehman** coloring.  
 It identifies which RDF nodes must remain **blank** (unlabeled) to ensure **k‑anonymity** under structural equivalence induced by WL color refinement.
